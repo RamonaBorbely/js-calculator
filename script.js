@@ -10,10 +10,12 @@ let operator, total
 
 elements.forEach( element => element.addEventListener('click', () => {
 
-    if(/^\d+$/.test(element.value)) { 
+    if(/^\d+$/.test(element.value) || element.value === '.') { 
+      
         inputField.value += element.value
-        nums.push(Number(element.value))
-        /////// solve . for decimal nums ////////////
+
+        nums.push(Number(inputField.value))
+        console.log(nums)
     }
    
     else if(element.value === 'C') {
@@ -51,7 +53,6 @@ elements.forEach( element => element.addEventListener('click', () => {
                 inputField.value = total
             } else {
                 inputField.value = 'Error'
-                ///////// Finish here so nums can be inserted again //////////
             }
         }
         if (operator === 'x'){
