@@ -1,0 +1,94 @@
+*, 
+html, 
+::before, 
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 30px 400px;
+    opacity: .9;
+    box-shadow: 2px 2px 2px #333;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+
+}
+
+input {
+    height: 40px;
+    padding: 2px 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    
+}
+
+input[type=text]{
+    box-shadow: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.element {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    color: white;
+    background-color: #333;
+    border: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.element-two-wrap  {
+    display: flex;
+}
+
+.expand-zero {
+    flex-grow: 2;
+    text-align: start;
+    padding-left: 15px;
+    border-radius: 40%;
+}
+
+.operation-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.operation-element {
+    background-color: orange;
+    color: white;
+    text-align: center;
+ 
+}
+
+.special {
+    background-color: #999;
+    color: #333;
+}
+
+.sib {
+    display: flex;
+}
+
+.txt {
+    text-align: center;
+}
